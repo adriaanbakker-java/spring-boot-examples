@@ -1,0 +1,31 @@
+insert into
+    actor(
+        nconst,
+        primary_name,
+        primary_profession,
+        birth_year,
+        known_for_titles
+    )
+VALUES
+    ( 'nm0000125',
+     'Sean Connery',
+     'actor,producer,soundtrack',
+     1930,
+     'tt0117500,tt0181536,tt0059800,tt0094226');
+	 
+
+insert into
+    actor(
+        nconst,
+        primary_name,
+        primary_profession,
+        birth_year,
+        known_for_titles
+    )
+VALUES
+    ( 'nm0000129',
+     'Tom Cruise',
+     'actor,producer,soundtrack',
+     1962,
+     'tt0092099,tt0116695,tt0325710,tt0181689');
+	 	 
