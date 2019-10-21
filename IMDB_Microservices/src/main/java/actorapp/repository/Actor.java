@@ -1,4 +1,4 @@
-package com.example.IMDB_Microservices.repository;
+package actorapp.repository;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

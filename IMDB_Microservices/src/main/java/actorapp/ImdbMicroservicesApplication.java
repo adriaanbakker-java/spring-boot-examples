@@ -1,4 +1,4 @@
-package com.example.IMDB_Microservices;
+package actorapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

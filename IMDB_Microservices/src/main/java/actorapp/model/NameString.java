@@ -1,4 +1,4 @@
-package com.example.IMDB_Microservices.model;
+package actorapp.model;
 
 public class NameString {
 	 public NameString(String content) {
