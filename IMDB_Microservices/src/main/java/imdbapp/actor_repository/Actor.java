@@ -1,4 +1,4 @@
-package actorapp.repository;
+package imdbapp.actor_repository;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

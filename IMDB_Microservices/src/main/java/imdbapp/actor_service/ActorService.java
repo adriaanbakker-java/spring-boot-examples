@@ -1,14 +1,12 @@
-package actorapp.service;
+package imdbapp.actor_service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-
-
-import actorapp.repository.Actor;
-import actorapp.repository.ActorRepository;
+import imdbapp.actor_repository.Actor;
+import imdbapp.actor_repository.ActorRepository;
 
 
 @Repository

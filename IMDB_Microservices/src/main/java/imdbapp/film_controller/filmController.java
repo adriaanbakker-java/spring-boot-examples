@@ -1,4 +1,4 @@
-package actorapp.controller;
+package imdbapp.film_controller;
 
 import java.util.List;
 
@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import actorapp.model.NameString;
-import actorapp.repository.Actor;
-import actorapp.repository.Film;
-import actorapp.service.ActorService;
-import actorapp.service.FilmService;
+import imdbapp.actor_repository.Actor;
+import imdbapp.actor_service.ActorService;
+import imdbapp.film_repository.Film;
+import imdbapp.film_service.FilmService;
+import imdbapp.model.NameString;
 
 @Controller
 public class filmController {

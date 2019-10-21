@@ -1,4 +1,4 @@
-package actorapp.model;
+package imdbapp.model;
 
 public class NameString {
 	 public NameString(String content) {

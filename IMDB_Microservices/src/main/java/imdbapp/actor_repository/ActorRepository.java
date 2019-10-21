@@ -1,4 +1,4 @@
-package actorapp.repository;
+package imdbapp.actor_repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
