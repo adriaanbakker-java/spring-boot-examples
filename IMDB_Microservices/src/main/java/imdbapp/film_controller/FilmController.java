@@ -16,7 +16,7 @@ import imdbapp.film_service.FilmService;
 import imdbapp.model.NameString;
 
 @Controller
-public class filmController {
+public class FilmController {
 	 @Autowired
 	    private FilmService filmService;
 	 

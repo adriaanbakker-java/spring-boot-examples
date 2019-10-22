@@ -18,4 +18,6 @@ public interface ActorRepository extends JpaRepository<Actor, Long> {
 			        "      and birth_year is not null", 
 			        nativeQuery = true)
 	List<Actor> findByName(String aPrimaryName);
+
+	Actor findByNconst(String aActorkey);
 }

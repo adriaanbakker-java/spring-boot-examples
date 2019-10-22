@@ -1,0 +1,56 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Film keys by actor key</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 16px;
+        }
+        h1, h2, div {
+            display: inline;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+    </style>
+</head>
+<body>
+
+ <h2>show film keys by actor key</h2>
+ <div th:if="${actor != null}">
+     <p th:text="${'actor name:' + actor.primaryName}"> </p>
+      <p th:text="${'actor key:' + actor.nconst}"> </p>
+ 
+	 <div th:if="${not #lists.isEmpty(filmactors)}">	   
+	     
+	         <table class="table table-striped">
+	             <tr th:each="filmactor : ${filmactors}">
+	                 <td  th:text="${filmactor.tconst}"></td>	               
+	                 <td  th:text="${filmactor.category}"></td>              
+	             </tr>
+	         </table>
+
+	 </div>
+	<div th:if="${#lists.isEmpty(filmactors)}">
+	    <p th:text="'Films for actor ' + ${namestring.content}"> </p> not found in relation table
+	</div>
+ </div>
+ <div th:if="${actor == null}">
+       <p th:text="'Actor with key ' + ${namestring.content}"> </p> not found in actor table
+ </div>
+ 
+ 
+</body>
+</html>

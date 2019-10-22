@@ -10,7 +10,8 @@ import java.util.List;
 public interface FilmRepository extends JpaRepository<Film, Long> {
 	 @Query(value = "select tconst, title_type, primary_title, original_title, is_adult, start_year, "+
                     " end_year, runtime_minutes, genres" +
-			        " from film where primary_title = ?1", 
+			        " from film where primary_title = ?1 " +
+                    " order by start_year desc", 
 			        nativeQuery = true)
 	List<Film> findByName(String aPrimaryTitle);
 }

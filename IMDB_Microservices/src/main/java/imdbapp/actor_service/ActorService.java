@@ -17,4 +17,8 @@ public class ActorService {
 	public List<Actor> getActors(String aName) {
         return (List<Actor>) repository.findByName(aName);
     }
+
+	public Actor getActorByKey(String aActorkey) {
+		return (Actor) repository.findByNconst(aActorkey);
+	}
 }
